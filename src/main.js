@@ -10,6 +10,7 @@ import 'materialize-css/dist/js/materialize.min'
 
 import DateFilter from '@/filters/date.filter'
 import CurrencyFilter from '@/filters/currency.filter'
+import ToolTipDirective from '@/directives/tooltip.directive'
 import MessagePlugin from '@/utils/message.plugin'
 import Loader from '@/components/app/Loader'
 
@@ -23,6 +24,7 @@ Vue.use(Vuelidate)
 Vue.use(MessagePlugin)
 Vue.filter('date', DateFilter)
 Vue.filter('currency', CurrencyFilter)
+Vue.directive('tooltip', ToolTipDirective)
 Vue.component('Loader', Loader)
 
 
