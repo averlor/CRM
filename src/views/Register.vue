@@ -86,6 +86,7 @@ export default {
         email: '',
         password: '',
         name: '',
+        locale: 'ru-RU',
         agree: false
     }),
     validations: {
@@ -105,7 +106,8 @@ export default {
             const formData = {
                 email: this.email,
                 password: this.password,
-                name: this.name
+                name: this.name,
+                locale: this.locale
             }
 
             try{

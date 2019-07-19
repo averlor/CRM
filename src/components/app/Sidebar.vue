@@ -16,15 +16,18 @@
 
 
 <script>
+
+import LocalizeFilter from '@/filters/localize.filter'
+
 export default {
     props: ['value'],
     data: () => ({
         links: [
-            {title: 'Счет', url: '/', exact:true},
-            {title: 'История', url: '/history'},
-            {title: 'Планирование', url: '/planning'},
-            {title: 'Новая запись', url: '/record'},
-            {title: 'Категории', url: '/categories'}
+            {title: LocalizeFilter('Menu_Bill'), url: '/', exact:true},
+            {title: LocalizeFilter('Menu_History'), url: '/history'},
+            {title: LocalizeFilter('Menu_Planning'), url: '/planning'},
+            {title: LocalizeFilter('Menu_New_Record'), url: '/record'},
+            {title: LocalizeFilter('Menu_Categories'), url: '/categories'}
         ]
     })
 }

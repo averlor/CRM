@@ -3,11 +3,11 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Сумма</th>
-                <th>Дата</th>
-                <th>Категория</th>
-                <th>Тип</th>
-                <th>Открыть</th>
+                <th>{{ 'HistoryTableSum' | localize }}</th>
+                <th>{{ 'HistoryTableDate' | localize }}</th>
+                <th>{{ 'HistoryTableCategories' | localize }}</th>
+                <th>{{ 'HistoryTableType' | localize }}</th>
+                <th>{{ 'HistoryTableOpen' | localize }}</th>
             </tr>
         </thead>
 
@@ -16,6 +16,7 @@
                 <td>{{ idx + 1 }}</td>
                 <td>{{ record.amount | currency("RUB") }}</td>
                 <td>{{ record.date | date('datetime') }}</td>
+                <!-- как локализовать данные из переменной? -->
                 <td>{{ record.categoryName }}</td>
                 <td>
                     <span 

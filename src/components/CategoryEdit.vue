@@ -2,7 +2,7 @@
     <div class="col s12 m6">
         <div>
             <div class="page-subtitle">
-                <h4>Редактировать</h4>
+                <h4>{{ 'CategoriesSubTitleEdit' | localize }}</h4>
             </div>
 
             <form @submit.prevent="submitHandler">
@@ -15,7 +15,7 @@
                         >{{ c.title }}
                         </option>
                     </select>
-                    <label>Выберите категорию</label>
+                    <label>{{ 'CategoriesLabelCategory' | localize }}</label>
                 </div>
 
                 <div class="input-field">
@@ -25,11 +25,11 @@
                         v-model="title"
                         :class="{invalid: $v.title.$dirty && !$v.title.required}"
                     >
-                    <label for="name">Название</label>
+                    <label for="name">{{ 'CategoriesLabelName' | localize }}</label>
                     <span
                         v-if="$v.title.$dirty && !$v.title.required" 
                         class="helper-text invalid"
-                    >Введите название категории</span>
+                    >{{ 'CategoriesUpdateMessage' | localize }}</span>
                 </div>
 
                 <div class="input-field">
@@ -39,15 +39,15 @@
                         v-model.number="limit"
                         :class="{invalid: $v.limit.$dirty && !$v.limit.minValue}"
                     >
-                    <label for="limit">Лимит</label>
+                    <label for="limit">{{ 'CategoriesLabelLimit' | localize }}</label>
                     <span
                         v-if="$v.limit.$dirty && !$v.limit.minValue" 
                         class="helper-text invalid"
-                    >Минимальное значение должно составлять {{ $v.limit.$params.minValue.min }}</span>
+                    >{{ 'CategoriesMessageLimitWarning' | localize }} {{ $v.limit.$params.minValue.min }}</span>
                 </div>
 
                 <button class="btn waves-effect waves-light" type="submit">
-                    Обновить
+                    {{ 'CategoryBtnUpdate' | localize }}
                     <i class="material-icons right">send</i>
                 </button>
             </form>
@@ -120,4 +120,3 @@ export default {
     }
 }
 </script>
-
