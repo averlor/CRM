@@ -36,6 +36,10 @@
     "CategoriesMessageLimitWarning": "The minimum amount should be",
     "CategoryBtnCreate": "Create",
     "CategoryBtnUpdate": "Update",
+    "DetailTitle":"History",
+    "DetailDescription":"Description",
+    "DetailSumm":"Summ",
+    "DetailCategory":"Category",
     "ProfileTitle": "Profile",
     "ProfileName": "Name",
     "ProfileMessage_enterName": "Enter your name",
@@ -48,5 +52,5 @@
     "Menu_New_Record": "New Record",
     "Menu_Categories": "Categories",
     "Income": "Income",
-    "Outcome": "OutCome"
+    "Outcome": "Outcome"
 }
