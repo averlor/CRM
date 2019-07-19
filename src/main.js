@@ -13,6 +13,7 @@ import CurrencyFilter from '@/filters/currency.filter'
 import ToolTipDirective from '@/directives/tooltip.directive'
 import MessagePlugin from '@/utils/message.plugin'
 import Loader from '@/components/app/Loader'
+import Paginate from 'vuejs-paginate'
 
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -26,6 +27,7 @@ Vue.filter('date', DateFilter)
 Vue.filter('currency', CurrencyFilter)
 Vue.directive('tooltip', ToolTipDirective)
 Vue.component('Loader', Loader)
+Vue.component('Paginate', Paginate)
 
 
 firebase.initializeApp({
