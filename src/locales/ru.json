@@ -46,5 +46,7 @@
     "Menu_History": "История",
     "Menu_Planning": "Планирование",
     "Menu_New_Record": "Новая запись",
-    "Menu_Categories": "Категории"
+    "Menu_Categories": "Категории",
+    "Income": "Доход",
+    "Outcome": "Расход"
 }
