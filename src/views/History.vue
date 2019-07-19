@@ -34,6 +34,7 @@
 import paginationMixin from '@/mixins/pagination.mixin'
 import HistoryTable from '@/components/HistoryTable'
 import {Pie} from 'vue-chartjs'
+import LocalizeFilter from '@/filters/localize.filter'
 
 export default {
     name: 'history',
@@ -61,7 +62,8 @@ export default {
                     ...record,
                     categoryName: categories.find(c => c.id === record.categoryId).title,
                     typeClass: record.type === 'income' ? 'green' : 'red',
-                    typeText: record.type === 'income' ? 'Доход' : 'Расход'
+                    typeText: 
+                        record.type === 'income' ? LocalizeFilter('Income') : LocalizeFilter('Outcome')
                 }
             }))
 
