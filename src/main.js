@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Vuelidate from 'vuelidate'
+import Paginate from 'vuejs-paginate'
+import VueMeta from 'vue-meta'
 
 import App from './App.vue'
 import router from './router'
@@ -14,7 +16,7 @@ import LocalizeFilter from '@/filters/localize.filter'
 import ToolTipDirective from '@/directives/tooltip.directive'
 import MessagePlugin from '@/utils/message.plugin'
 import Loader from '@/components/app/Loader'
-import Paginate from 'vuejs-paginate'
+import TitlePlugin from '@/utils/title.plugin'
 
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -24,6 +26,8 @@ Vue.config.productionTip = false
 
 Vue.use(Vuelidate)
 Vue.use(MessagePlugin)
+Vue.use(VueMeta)
+Vue.use(TitlePlugin)
 Vue.filter('date', DateFilter)
 Vue.filter('currency', CurrencyFilter)
 Vue.filter('localize', LocalizeFilter)
