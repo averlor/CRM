@@ -52,5 +52,14 @@
     "Menu_New_Record": "New Record",
     "Menu_Categories": "Categories",
     "Income": "Income",
-    "Outcome": "Outcome"
+    "Outcome": "Outcome",
+    
+    "History": "History",
+    "Planning": "Planning",
+    "New Record": "New Record",
+    "Categories": "Categories",
+    "Home":"Home",
+    "Profile": "Profile",
+    "Login": "Login",
+    "Registration": "Registration"
 }

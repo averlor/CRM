@@ -52,5 +52,14 @@
     "Menu_New_Record": "Новая запись",
     "Menu_Categories": "Категории",
     "Income": "Доход",
-    "Outcome": "Расход"
+    "Outcome": "Расход",
+
+    "History": "История",
+    "Planning": "Планирование",
+    "New Record": "Новая запись",
+    "Categories": "Категории",
+    "Home":"Главная",
+    "Profile":"Профиль",
+    "Login": "Логин",
+    "Registration": "Регистрация"
 }
