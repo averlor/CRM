@@ -47,8 +47,14 @@
 import {mapGetters, mapActions} from 'vuex'
 import {required} from 'vuelidate/lib/validators'
 import messages from '@/utils/messages'
+import LocalizeFilter from '@/filters/localize.filter'
 
 export default {
+    metaInfo() {
+        return {
+            title: this.$title('Profile')
+            }
+    },
     data: () => {
         return {
             name: '',

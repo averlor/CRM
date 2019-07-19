@@ -38,6 +38,11 @@ import LocalizeFilter from '@/filters/localize.filter'
 
 export default {
     name: 'history',
+    metaInfo() {
+        return {
+            title: this.$title('History')
+            }
+    },
     extends: Pie,
     mixins: [paginationMixin],
     components: {

@@ -90,6 +90,11 @@ import {mapGetters} from 'vuex'
 
 export default {
     name: 'record',
+    metaInfo() {
+        return {
+            title: this.$title('New Record')
+            }
+    },
     data: () => ({
         loading: true,
         select: null,
